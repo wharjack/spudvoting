@@ -1,0 +1,203 @@
+#first-section-con {
+	font-size: 0;
+	margin-top: 10px;
+}
+.section {
+	width: 640px;
+}
+.search-student input,select {
+	box-sizing: border-box;
+	border: 1px solid #dfdedc;
+	border-radius: 3px;
+	padding: 9px 15px;
+	font-size: 14px;
+	font-family: inherit;
+	color: #4f4e4c;
+}
+.search-student select {
+	padding: 8px 15px;
+}
+.search-student input[type='text'] {
+	width: 300px;
+}
+.search-student input[type='submit'] {
+	background-color: #3297D3;
+	color: #FFFFFF;
+	font-weight: bold;
+	border: 1px solid #3297D3;
+	cursor: pointer;
+}
+.election-buttons {
+	text-align: right;
+}
+.election-button {
+	font-weight: bold;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+}
+#button-validate-new-election {
+	
+	padding: 8px 13px;
+	border: 2px solid #2FB47E;
+	color: #2FB47E;
+	margin-left: 13px;
+}
+#button-validate-start-election {
+	padding: 8px 13px;
+	border: 2px solid #E39F48;
+	background-color: transparent;
+	color: #E39F48;
+}
+#button-validate-end-election {
+	padding: 8px 13px;
+	background-color:  transparent;
+	margin-left: 13px;
+	color: #f44336;
+	border: 2px solid #f44336;
+}
+
+#second-section-con {
+	font-size: 0;
+	margin-top: 30px;
+}
+
+#button-delete-candidate {
+	box-sizing: border-box;
+	border: 1px solid #f44336;
+	border-radius: 3px;
+	padding: 9px 15px;
+	font-size: 14px;
+	font-family: inherit;
+	background-color: #f44336;
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+.search-candidate {
+	text-align: right;
+}
+.search-candidate input {
+	box-sizing: border-box;
+	border: 1px solid #dfdedc;
+	border-radius: 3px;
+	padding: 9px 15px;
+	font-size: 14px;
+	font-family: inherit;
+	color: #4f4e4c;
+	width: 300px;
+}
+
+.search-candidate input[type='submit'] {
+	background-color: #2FB47E;
+	color: #FFFFFF;
+	font-weight: bold;
+	border: 1px solid #2FB47E;
+	cursor: pointer;
+	width: 85px;
+}
+#candidates-con {
+	margin-top: 10px;
+	font-size: 14px;
+}
+#candidate-list table {
+	text-align: left;
+	border-collapse: collapse;
+}
+#candidate-list table tr th {
+	color: #4f4e4c;
+	padding: 7px 3px 20px 3px;
+	border-bottom: 2px solid #3297D3;
+}
+#candidate-list table tr:nth-child(even) {
+	background-color: #FFFFFF;
+}
+#candidate-list table tr td {
+	color: #6f6e6c;
+	padding: 7px 3px;
+}
+#candidate-list table tr td select {
+	box-sizing: border-box;
+	border: 1px solid #dfdedc;
+	border-radius: 3px;
+	padding: 7px;
+	font-size: 14px;
+	font-family: inherit;
+	color: inherit;
+}
+
+.candidate-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.md-election {
+	width: 700px;
+	height: 200px;
+	margin-top: calc(50vh - 100px);
+}
+.md-candidate {
+	width: 700px;
+	height: 180px;
+	margin-top: calc(50vh - 90px);
+}
+#md-submit-button-start-election {
+	font-weight: bold;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 8px 13px;
+	border: 2px solid #E39F48;
+	color: #E39F48;
+	float: right;
+	background-color: transparent;
+}
+#md-submit-button-end-election {
+	font-weight: bold;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 10px 15px;
+	color: #f44336;
+	border: 2px solid #f44336;
+	float: right;
+	background-color: transparent;
+}
+#md-submit-button-new-election {
+	font-weight: bold;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 10px 15px;
+	border: 2px solid #2FB47E;
+	color: #2FB47E;
+	float: right;
+	background-color: transparent;
+}
+#md-submit-delete-candidate {
+	font-weight: bold;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 10px 15px;
+	border: 0;
+	background-color:  #f44336;
+	color: #FFFFFF;
+	float: right;
+}
+#student-result-box {
+	
+	position: absolute;
+	float: left;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 1000px;
+	max-height: 500px;
+	overflow-y: auto;
+	margin-top: 3px;
+	border-radius: 3px;
+	display: none;
+}

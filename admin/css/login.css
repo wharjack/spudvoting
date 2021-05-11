@@ -1,0 +1,39 @@
+#login-panel {
+	width: 400px;
+	border: 1px solid #dfdedc;
+	margin: 0 auto;
+	margin-top: 75px;
+	padding: 15px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+}
+#spud-logo {
+	width: 100px;
+	margin: 0 auto;
+}
+#login-text {
+	padding:10px;
+	text-align: center;
+	color: #555575;
+}
+.form-group {
+	margin-bottom: 10px;
+}
+.form-group label{
+	color: #555575;
+}
+.form-group input{
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #DBDBDB;
+	color: #666675;
+	padding: 8px 12px;
+	border-radius: 3px;
+}
+.form-group input[type='submit']{
+	cursor: pointer;
+	background-color: #4CAF50; 
+	border: 1px solid #4CAF50;
+	color: #FFFFFF;
+	font-weight: bold;
+}

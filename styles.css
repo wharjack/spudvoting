@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+:root {
+  --primary-text-color: #343a40;
+  --secondary-text-color: #6c757d;
+  --primary-blue: #4285f4;
+  --primary-green: #34a853;
+  --primary-green-30pct: #c2e5cb;
+  --primary-green-70pct: #71c287;
+  --primary-green-90pct: #ebf6ee;
+  --input-border-color: #dee2e6;
+  --super-light-gray: #f8f9fa;
+  --light-gray: #e9ecef;
+  --open-sans: 'Open Sans', sans-serif;
+}
+
+body {
+	font-family: var(--open-sans);
+	background-color: #e9ecef;
+	margin: 0;
+}
+main {
+	background-color:  var(--light-gray);
+	box-sizing: border-box;
+	padding: 30px;
+}
+.button {
+	cursor: pointer;
+}
+.input, .button{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 12px 18px;
+	border: 0;
+	font-size: 14px;
+	outline: 0;
+}
+/* LOGIN PAGE */
+.login-container{
+	align-items: center;
+	background-color: var(--primary-green-30pct);
+	display: flex;
+	font-family: var(--open-sans);
+	height: 100vh;
+	justify-content: center;
+	margin: 0;
+}
+.login-container__panel {
+	background-color: white;
+	border-radius: 12px;
+	padding: 24px;
+	width: 330px;
+}
+.login__logo {
+	height: 0;
+	margin: 0 auto;
+	width: 100px;
+	position: relative;
+	bottom: 75px;
+}
+.login__logo img {
+	background-color: var(--primary-green-70pct);;
+	border-radius: 50px;
+	box-sizing: border-box;
+	padding: 8px;
+}
+.login__heading {
+	color: var(--primary-text-color);
+	text-align: center;
+}
+.form__input-text,.form__input-password   {
+	border: 1px solid var(--input-border-color);
+	border-radius: 20px;
+	background-color: var(--super-light-gray);
+	margin-top: 12px;
+	color: var(--primary-text-color);
+	transition: .3s;
+}
+.form__input-text--focus:focus, .form__input-password--focus:focus {
+	background-color: var(--primary-green-90pct);
+	border: 1px solid var(--primary-green);
+}
+.form__button {
+	border-radius: 20px;
+	background-color: var(--primary-green);
+	margin-top: 24px;
+	color: white;
+	font-weight: 600;
+	transition: .3s;
+}
+.form__button--focus:focus {
+	background-color: var(--primary-green-30pct);
+	border: 1px solid var(--primary-green);
+	color: var(--primary-green);
+}
+.form__button:hover {
+	background-color: var(--primary-green-70pct);
+}
+
+.login__home-link {
+	text-decoration: none;
+	color: var(--primary-blue);
+	font-size: 14px;
+}
+.login__home-link:hover {
+	text-decoration: underline;
+}
+/* .LOGIN PAGE*/
+
+ /* HEADER */
+
+.main-header {
+	align-items: center;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	font-weight: 600;
+	height: 40px;
+	padding: 8px 30px;
+	
+}
+.header__logo {
+	height: 40px;
+	width: 40px;
+}
+.header__logo-text {
+	color: var(--primary-text-color);
+	font-size: 14px;
+	margin-left: 12px;
+}
+.header__nav {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+}
+.nav__link {
+	box-sizing: border-box;
+	color: var(--primary-text-color);
+	font-size: 13px;
+	outline: 0;
+	padding: 4px 18px;
+	text-decoration: none;
+}
+.nav__link--focus:focus {
+	text-decoration: underline;
+}
+.nav__link:hover {
+	text-decoration: underline;
+}
+.nav__link--special {
+	background-color: var(--primary-green) ;
+	border-radius: 15px;
+	color: white;
+}
+.header__student-img{
+	border: 1px solid #c2e5cb;
+	border-radius: 20px;
+	height: 35px;
+	margin: 0 12px;
+	overflow: hidden;
+	width: 35px;
+}
+
+.header__student-info {
+	font-size: 14px;
+}
+.student__id, .student__full-name {
+	color: var(--primary-text-color);
+}
+.student__department, .student__course {
+	color: var(--secondary-text-color);
+}
+
+ /* .HEADER */
+
+ /* INDEX */
+
+.section-heading {
+	color: var(--primary-text-color);
+	margin: 0;
+}
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 16rem);
+	justify-content: center;
+}
+.cards__item {
+	box-sizing: border-box;
+	padding: 12px;
+}
+.card__content {
+	background-color: white;
+	border-radius: 12px;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 12px;
+}
+.candidate__department, .candidate__name {
+	color: var(--primary-text-color);
+	font-weight: bold;
+}
+.candidate__img {
+	border: 3px solid var(--primary-green-30pct);
+	border-radius: 75px;
+	height: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100px;
+}
+.candidate__course {
+	color: var(--secondary-text-color);
+	font-size: 14px;
+}
+.candidate__footer {
+	border-top: 1px solid var(--primary-green-30pct);
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 7px;
+	width: 100%;
+}
+.text__vote-count{
+	color: var(--primary-green);
+}
+.candidate__text-votes {
+	color: var(--primary-green-70pct);
+	font-size: 14px;
+	font-weight: bold;
+}
+ /* .INDEX */
+
+ /* .VOTE */
+
+.text__icon--disabled {
+	color: var(--primary-green-30pct);
+}
+.card__content--vote-cards  {
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: .3s;
+}
+.card__content--vote-cards:hover {
+	background-color: var(--primary-green-90pct);
+	border: 1px solid var(--primary-green);
+
+}
+.js-card__content--is-selected {
+	border: 1px dashed var(--primary-green);
+	background-color: var(--primary-green-90pct);
+}
+.js-card__content--is-selected > .candidate__img {
+	border-color: var(--primary-green);
+}
+.js-card__content--is-selected > .candidate__footer > .text__icon{
+	color: var(--primary-green);
+}
+/* .VOTE */
+
+
